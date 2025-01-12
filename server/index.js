@@ -12,7 +12,7 @@ app.use('/client', require('./src/routes/ClientRoute'));
 app.use('/deal', require('./src/routes/DealRoute'));
 const PORT = 5000;
     
-mongoose.connect('mongodb://127.0.0.1:27017/GestioClient')
+mongoose.connect('mongodb://mongodb:27017/GestioClient')
 .then(() => {
 app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
 })
