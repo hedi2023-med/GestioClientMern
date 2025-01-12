@@ -18,7 +18,7 @@ pipeline {
                     echo 'Starting Git checkout...'
                     git branch: 'main',
                         url: 'https://github.com/hedi2023-med/GestioClientMern.git',
-                        credentialsId: 'github' // Jenkins credentials ID for GitHub SSH key
+                        credentialsId: 'git' // Jenkins credentials ID for GitHub SSH key
                 }
             }
         }
